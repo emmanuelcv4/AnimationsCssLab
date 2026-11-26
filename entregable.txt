@@ -1,0 +1,16 @@
+Pregunta 1: ¿Qué está sucediendo visualmente cuando mantienes el clic sobre una card? ¿Qué propiedad o selector CSS crees que lo provoca?
+La tarjeta hace una animación de corte diagonal mientras mantengo el clic. Creo que lo provoca el selector .card:active, que aplica la animación slit-in-diagonal-2 solo mientras el botón del mouse está presionado.
+
+Pregunta 2: ¿Qué cambió en el comportamiento de las cards al recargar la página?
+Al recargar, las tarjetas aparecen con la animación de corte diagonal. Pasa porque la animación ahora está en .card, sin ningún selector especial, así que se ejecuta cuando carga la página.
+
+Pregunta 3: ¿Qué 3 selectores elegiste? Describe brevemente qué hace cada uno y cómo se comportó la animación al usarlo.
+.card:hover aplica la animación cuando paso el cursor encima de la tarjeta. .card:active la aplica mientras mantengo el clic presionado. .card:first-child solo afecta a la primera tarjeta, así que solo ella se anima y las demás quedan igual.
+
+Pregunta 4: ¿Para qué sirve un @keyframes en CSS? Explícalo con tus propias palabras.
+Sirve para definir cómo cambia un elemento durante una animación. Ahí se escribe cómo se ve al inicio, al final y en los pasos de en medio, y luego se usa el nombre del keyframes en la propiedad animation.
+
+Pregunta 5: Elige 3 propiedades de las animaciones que usaste y explica qué hace cada una.
+animation-duration — Indica cuánto tiempo tarda la animación en completarse.
+animation-timing-function — Define la velocidad de la animación, por ejemplo ease-out empieza rápido y termina lento.
+transform — Permite modificar elementos: pueden ser trasladados, rotados, escalados o sesgados de acuerdo con los valores establecidos.
